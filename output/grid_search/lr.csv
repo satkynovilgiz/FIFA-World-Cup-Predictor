@@ -1,0 +1,73 @@
+params,feats,avg_loss,avg_acc
+"{""C"": 0.001}","['att_diff', 'mid_diff', 'def_diff']",0.9438504986581939,0.571875
+"{""C"": 0.001}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff']",0.9443824941329657,0.571875
+"{""C"": 0.01}","['att_diff', 'mid_diff', 'def_diff']",0.9495148792571999,0.56875
+"{""C"": 0.01}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff']",0.9507081101061683,0.5625
+"{""C"": 0.1}","['att_diff', 'mid_diff', 'def_diff']",0.9509902933209838,0.571875
+"{""C"": 1}","['att_diff', 'mid_diff', 'def_diff']",0.951161261165401,0.571875
+"{""C"": 10}","['att_diff', 'mid_diff', 'def_diff']",0.9511801880749118,0.571875
+"{""C"": 100}","['att_diff', 'mid_diff', 'def_diff']",0.9511818805600722,0.571875
+"{""C"": 0.1}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff']",0.9524588744960081,0.56875
+"{""C"": 1}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff']",0.9526650193958194,0.56875
+"{""C"": 10}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff']",0.9526843964398621,0.56875
+"{""C"": 100}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff']",0.9526859145370163,0.56875
+"{""C"": 0.001}","['att_diff', 'mid_diff', 'def_diff', 'fifa_rank_diff']",0.9547463548677493,0.559375
+"{""C"": 0.001}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff', 'fifa_rank_diff']",0.9552015473340084,0.55625
+"{""C"": 0.001}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff']",0.9553872804378338,0.5875
+"{""C"": 0.001}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff']",0.956373208094227,0.578125
+"{""C"": 0.001}",['elo_rating_diff'],0.9588974960718171,0.571875
+"{""C"": 0.01}",['elo_rating_diff'],0.9588988315263322,0.571875
+"{""C"": 0.1}",['elo_rating_diff'],0.9588989940398565,0.571875
+"{""C"": 1}",['elo_rating_diff'],0.9588990158568815,0.571875
+"{""C"": 10}",['elo_rating_diff'],0.9588990186382726,0.571875
+"{""C"": 100}",['elo_rating_diff'],0.9588990189306734,0.571875
+"{""C"": 0.001}","['elo_rating_diff', 'titles_diff']",0.9611217022004788,0.565625
+"{""C"": 0.01}","['att_diff', 'mid_diff', 'def_diff', 'fifa_rank_diff']",0.9612542382220802,0.5625
+"{""C"": 0.01}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff', 'fifa_rank_diff']",0.962231097459956,0.559375
+"{""C"": 0.1}","['att_diff', 'mid_diff', 'def_diff', 'fifa_rank_diff']",0.9629383256687764,0.55625
+"{""C"": 1}","['att_diff', 'mid_diff', 'def_diff', 'fifa_rank_diff']",0.9631236252558649,0.559375
+"{""C"": 10}","['att_diff', 'mid_diff', 'def_diff', 'fifa_rank_diff']",0.9631421656187467,0.559375
+"{""C"": 100}","['att_diff', 'mid_diff', 'def_diff', 'fifa_rank_diff']",0.9631481441575558,0.559375
+"{""C"": 0.001}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'fifa_rank_diff']",0.9633532807319745,0.56875
+"{""C"": 0.01}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff']",0.9635212972904423,0.584375
+"{""C"": 0.001}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.9640924680435512,0.565625
+"{""C"": 0.1}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff', 'fifa_rank_diff']",0.9641422850323691,0.559375
+"{""C"": 1}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff', 'fifa_rank_diff']",0.9643633676796733,0.559375
+"{""C"": 100}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff', 'fifa_rank_diff']",0.9643888264623326,0.559375
+"{""C"": 10}","['att_diff', 'mid_diff', 'def_diff', 'titles_diff', 'fifa_rank_diff']",0.9643917116090673,0.559375
+"{""C"": 0.1}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff']",0.9653742267812871,0.5875
+"{""C"": 0.001}","['elo_rating_diff', 'fifa_rank_diff']",0.9654292625632696,0.55625
+"{""C"": 1}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff']",0.9655782132642774,0.584375
+"{""C"": 10}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff']",0.9656013176596578,0.584375
+"{""C"": 100}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff']",0.9656024806102025,0.584375
+"{""C"": 0.01}","['elo_rating_diff', 'fifa_rank_diff']",0.9656464095786588,0.55625
+"{""C"": 0.1}","['elo_rating_diff', 'fifa_rank_diff']",0.9656686665967609,0.55625
+"{""C"": 1}","['elo_rating_diff', 'fifa_rank_diff']",0.9656709557289556,0.55625
+"{""C"": 10}","['elo_rating_diff', 'fifa_rank_diff']",0.9656711615054213,0.55625
+"{""C"": 100}","['elo_rating_diff', 'fifa_rank_diff']",0.9656711644825379,0.55625
+"{""C"": 0.01}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff']",0.965761175384154,0.584375
+"{""C"": 0.01}","['elo_rating_diff', 'titles_diff']",0.9658599007613826,0.565625
+"{""C"": 0.001}","['elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.9676515494140212,0.559375
+"{""C"": 0.1}","['elo_rating_diff', 'titles_diff']",0.9677288724001573,0.565625
+"{""C"": 1}","['elo_rating_diff', 'titles_diff']",0.9679727757259267,0.565625
+"{""C"": 10}","['elo_rating_diff', 'titles_diff']",0.967997542156904,0.565625
+"{""C"": 100}","['elo_rating_diff', 'titles_diff']",0.9680000514067851,0.565625
+"{""C"": 0.1}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff']",0.9681773118831558,0.584375
+"{""C"": 1}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff']",0.9684637500592528,0.584375
+"{""C"": 10}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff']",0.9684892242067444,0.584375
+"{""C"": 100}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff']",0.9684987651056725,0.584375
+"{""C"": 0.01}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'fifa_rank_diff']",0.9721861914873582,0.565625
+"{""C"": 0.01}","['elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.9726945451956663,0.553125
+"{""C"": 0.01}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.9735051722812853,0.56875
+"{""C"": 0.1}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'fifa_rank_diff']",0.9741914270202383,0.565625
+"{""C"": 1}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'fifa_rank_diff']",0.9744223315509523,0.565625
+"{""C"": 100}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'fifa_rank_diff']",0.974446362219749,0.565625
+"{""C"": 10}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'fifa_rank_diff']",0.9744466688759756,0.565625
+"{""C"": 0.1}","['elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.9746615951810045,0.55625
+"{""C"": 1}","['elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.9749183434747994,0.55625
+"{""C"": 10}","['elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.9749451127756043,0.55625
+"{""C"": 100}","['elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.9749479261239635,0.55625
+"{""C"": 0.1}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.975900415483806,0.5625
+"{""C"": 1}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.9761994061518608,0.5625
+"{""C"": 10}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.9762278766971606,0.5625
+"{""C"": 100}","['att_diff', 'mid_diff', 'def_diff', 'elo_rating_diff', 'titles_diff', 'fifa_rank_diff']",0.9762336623111123,0.5625

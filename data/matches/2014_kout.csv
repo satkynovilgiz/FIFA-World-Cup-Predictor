@@ -1,0 +1,17 @@
+stage,team_1,score_1,team_2,score_2
+16,brazil,1,chile,1
+16,colombia,2,uruguay,0
+16,netherlands,2,mexico,1
+16,costa_rica,1,greece,1
+16,france,2,nigeria,0
+16,germany,2,algeria,1
+16,argentina,1,switzerland,0
+16,belgium,2,united_states,1
+quarter,france,0,germany,1
+quarter,brazil,2,colombia,1
+quarter,argentina,1,belgium,0
+quarter,netherlands,0,costa_rica,0
+semi,brazil,1,germany,7
+semi,netherlands,0,argentina,0
+third,brazil,0,netherlands,3
+final,germany,1,argentina,0

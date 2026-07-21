@@ -1,0 +1,33 @@
+nation,id,att,mid,def,fifa_rank,titles,elo_rating
+Algeria,algeria,72,73,73,30,0,1539
+Argentina,argentina,84,81,79,7,2,1921
+Australia,australia,76,73,73,20,0,1775
+Brazil,brazil,84,77,82,1,5,2109
+Cameroon,cameroon,77,73,74,19,0,1694
+Chile,chile,76,75,73,18,0,1886
+Denmark,denmark,76,74,75,36,0,1778
+England,england,82,81,83,8,1,2001
+France,france,83,83,83,9,1,1861
+Germany,germany,81,81,81,6,3,1957
+Ghana,ghana,75,77,72,32,0,1687
+Greece,greece,75,74,73,13,0,1735
+Honduras,honduras,72,74,67,38,0,1714
+Italy,italy,83,83,81,5,4,1936
+Ivory Coast,ivory_coast,80,77,77,27,0,1739
+Japan,japan,72,74,70,45,0,1678
+Mexico,mexico,73,73,73,17,0,1898
+Netherlands,netherlands,80,81,77,4,0,2043
+New Zealand,new_zealand,61,60,62,78,0,1527
+Nigeria,nigeria,76,73,74,21,0,1713
+North Korea,north_korea,67,69,68,105,0,1537
+Paraguay,paraguay,79,74,73,31,0,1764
+Portugal,portugal,81,79,80,3,0,1876
+Serbia,serbia,76,78,78,15,0,1840
+Slovakia,slovakia,75,73,73,34,0,1670
+Slovenia,slovenia,74,71,71,25,0,1686
+South Africa,south_africa,71,73,70,83,0,1592
+South Korea,south_korea,72,71,68,47,0,1765
+Spain,spain,87,86,83,2,0,2111
+Switzerland,switzerland,75,75,75,24,0,1761
+United States,united_states,72,75,73,14,0,1785
+Uruguay,uruguay,76,71,75,16,2,1845
