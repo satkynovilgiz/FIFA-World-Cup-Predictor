@@ -1,0 +1,33 @@
+nation,id,att,mid,def,fifa_rank,titles,elo_rating
+Iran,iran,58,69,63,23,0,1842
+Japan,japan,73,71,64,18,0,1789
+Saudi Arabia,saudi_arabia,60,61,60,34,0,1554
+South Korea,south_korea,75,71,73,29,0,1744
+Angola,angola,67,57,60,57,0,1564
+Ghana,ghana,70,74,71,48,0,1616
+Ivory Coast,ivory_coast,78,73,73,32,0,1766
+Togo,togo,71,61,59,61,0,1488
+Tunisia,tunisia,76,69,68,21,0,1703
+Costa Rica,costa_rica,65,69,65,26,0,1724
+Mexico,mexico,77,79,75,4,0,1838
+Trinidad and Tobago,trinidad_and_tobago,74,64,65,47,0,1566
+United States,united_states,74,74,72,5,0,1824
+Argentina,argentina,87,84,85,9,2,1921
+Brazil,brazil,91,87,86,1,5,2034
+Ecuador,ecuador,63,58,69,39,0,1700
+Paraguay,paraguay,79,69,74,33,0,1779
+Australia,australia,81,74,72,42,0,1798
+Croatia,croatia,84,74,78,23,0,1838
+Czech Republic,czech_republic,85,81,79,2,0,1971
+England,england,88,85,85,10,1,1972
+France,france,90,84,85,8,1,1970
+Germany,germany,85,80,84,19,3,1895
+Italy,italy,85,83,85,13,3,1943
+Netherlands,netherlands,85,76,76,3,0,1994
+Poland,poland,76,69,71,29,0,1821
+Portugal,portugal,83,83,82,7,0,1915
+Serbia and Montenegro,serbia_and_montenegro,79,75,78,44,0,1799
+Spain,spain,85,83,85,5,0,1964
+Sweden,sweden,82,75,72,16,0,1859
+Switzerland,switzerland,80,73,77,35,0,1799
+Ukraine,ukraine,80,70,67,45,0,1790

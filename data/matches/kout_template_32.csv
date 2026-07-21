@@ -1,0 +1,17 @@
+stage,team_1,match_num,team_2
+16,winner group A,49,runner-up group B
+16,winner group C,50,runner-up group D
+16,winner group E,51,runner-up group F
+16,winner group G,52,runner-up group H
+16,winner group B,53,runner-up group A
+16,winner group D,54,runner-up group C
+16,winner group F,55,runner-up group E
+16,winner group H,56,runner-up group G
+quarter,winner match 49,57,winner match 50
+quarter,winner match 51,58,winner match 52
+quarter,winner match 53,59,winner match 54
+quarter,winner match 55,60,winner match 56
+semi,winner match 57,61,winner match 58
+semi,winner match 59,62,winner match 60
+third,loser match 61,63,loser match 62
+final,winner match 61,64,winner match 62
