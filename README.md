@@ -2,158 +2,84 @@
 
 # ⚽ FIFA World Cup Predictor
 
-**Predicting and simulating FIFA World Cups with machine learning and Monte Carlo simulation**
+### Can a model predict the world's biggest football tournament?
+
+Match probabilities, XGBoost, and Monte Carlo simulations — from historical World Cups to a 48-team tournament.
 
 ![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-00C853?style=for-the-badge)
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-FF6F00?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-2196F3?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-00C853?style=for-the-badge)
 
-<img src="./img/fifa_wc.png" width="480" alt="Dashboard">
-
-</div>
-
-<br>
-
-## 📌 Overview
-
-This project estimates match outcome probabilities between national teams and uses those probabilities to simulate complete tournaments — enabling both **retrospective evaluation** of past FIFA World Cups and **forecasting** of future ones.
-
-**Core features used:** EA Sports FIFA game ratings · ELO ratings · FIFA ranking
-
-<br>
-
-## 📑 Table of Contents
-
-- [Historical Performance](#-historical-performance)
-- [2026 Forecast](#-fifa-world-cup-2026-forecast)
-- [Simulation Methodology](#-simulation-methodology)
-- [Supported Models](#-supported-models)
-- [Reproducing the Forecast](#-reproducing-the-2026-forecast)
-- [Disclaimer](#-disclaimer)
-
-<br>
-
-## 🏆 Historical Performance
-
-The final model was selected through a two-stage evaluation process:
-
-1. **Leave-One-World-Cup-Out Cross Validation**
-2. **Tournament-Level Monte Carlo Evaluation**
-
-> The objective isn't just predicting individual matches accurately — it's generating **realistic tournament outcomes**.
-
-### Historical Results — XGBoost
-
-| World Cup | Actual Champion | Predicted Champion | Champion Probability |
-| :-------: | :--------------- | :------------------ | :-------------------: |
-| 2006      | Italy             | 🥈 France            | 4.94%                 |
-| 2010      | Spain             | ✅ Spain             | 33.71%                |
-| 2014      | Germany           | ✅ Germany           | 19.84%                |
-| 2018      | France            | Brazil               | 24.38%                |
-| 2022      | Argentina         | ✅ Argentina         | 20.17%                |
-
-### Evaluation Metrics
-
-<div align="center">
-
-| Metric | Value |
-| :----- | :---: |
-| Average Log Loss | 1.961 |
-| Tournament Loss | 1.938 |
-| 🏆 Champions Correctly Predicted | 3 / 5 |
-| 4️⃣ Real Champion in Top 4 Favorites | 4 / 5 |
+<img src="./img/fifa_wc.png" width="480" alt="World Cup predictor dashboard">
 
 </div>
 
-<br>
+## The idea
 
----
+Predict each match using **EA Sports FIFA ratings, Elo ratings, and FIFA rankings**. Then simulate the entire tournament repeatedly to estimate each team's chances of advancing and winning.
 
-## 🔮 FIFA World Cup 2026 Forecast
+A good match prediction is useful. A realistic **tournament simulation** is the real goal.
 
-After training on all completed World Cups and running Monte Carlo simulations, the project generates title probabilities for every team in the 2026 tournament.
+## 🏆 Historical evaluation
 
-<div align="center">
+The model was evaluated with leave-one-World-Cup-out cross-validation and tournament-level simulations. XGBoost was selected from five tested models.
 
-| | Team | Title Probability |
-| :---: | :--- | :---: |
-| <img src="./img/spain.png" width="36"> | **Spain** | 🥇 24.82% |
-| <img src="./img/france.png" width="36"> | **France** | 🥈 19.67% |
-| <img src="./img/england.png" width="36"> | **England** | 🥉 14.13% |
-| <img src="./img/portugal.png" width="36"> | **Portugal** | 12.07% |
+| World Cup | Actual champion | Model's top pick | Reported probability |
+| :---: | :--- | :--- | ---: |
+| 2006 | Italy | France | 4.94% |
+| 2010 | Spain | Spain ✅ | 33.71% |
+| 2014 | Germany | Germany ✅ | 19.84% |
+| 2018 | France | Brazil | 24.38% |
+| 2022 | Argentina | Argentina ✅ | 20.17% |
 
-</div>
+**Reported results:** 3 of 5 champions predicted · Actual champion among the top four favorites in 4 of 5 tournaments · Average log loss: 1.961 · Tournament loss: 1.938
 
-Probabilities come from **1,000,000 tournament simulations** using FIFA's new 48-team format, including group-stage qualification of the best third-placed teams and the Round of 32.
+> The probabilities above are copied from the project's reported results. See the code and output files for how they were calculated.
 
-<br>
+## 🔮 2026 simulation snapshot
 
-## ⚙️ Simulation Methodology
+The project's 48-team simulation reported these title probabilities:
 
-For each tournament simulation:
+| Team | Title probability |
+| :--- | ---: |
+| 🇪🇸 Spain | 24.82% |
+| 🇫🇷 France | 19.67% |
+| 🏴 England | 14.13% |
+| 🇵🇹 Portugal | 12.07% |
 
-```
- 1. Group-stage matches simulated from model-predicted probabilities
- 2. Group standings calculated
- 3. Knockout brackets generated per FIFA rules
- 4. Every knockout match simulated
- 5. Champion recorded
- 6. Repeat N times → Estimate probabilities
-```
+These are **model outputs**, not actual tournament results. Add the run date and input-data cutoff here if you want to present them as a pre-tournament forecast.
 
-<div align="center">
+## ⚙️ How it works
 
 ```mermaid
-graph TD
-    A[Train Model] --> B[Predict Match Probabilities]
-    B --> C[Simulate World Cup]
-    C --> D[Record Champion]
-    D --> E[Repeat N Times]
-    E --> F[Estimate Probabilities]
+flowchart LR
+    A["Team ratings"] --> B["Match probabilities"]
+    B --> C["Simulate groups"]
+    C --> D["Simulate knockouts"]
+    D --> E["Record champion"]
+    E --> F["Repeat and estimate odds"]
 ```
 
-</div>
+The simulation models the 48-team format: group standings, qualification of the best third-place teams, and the Round of 32. The reported 2026 run used **1,000,000 simulations**.
 
-<br>
+### Models tested
 
-## 🤖 Supported Models
+Logistic Regression · Random Forest · **XGBoost (selected)** · LightGBM · CatBoost
 
-| Model | Status |
-| :---- | :---: |
-| Logistic Regression | ✔️ |
-| Random Forest | ✔️ |
-| XGBoost | ⭐ Selected |
-| LightGBM | ✔️ |
-| CatBoost | ✔️ |
-
-**XGBoost** delivered the best results across evaluation and was selected for the 2026 World Cup predictions.
-
-<br>
-
-## 🚀 Reproducing the 2026 Forecast
+## 🚀 Reproduce the run
 
 ```bash
 python -m scripts.run_wc_2026 1000000 42
 ```
 
-| Argument | Description |
-| :------- | :----------- |
-| `1000000` | Monte Carlo iterations |
-| `42` | Random seed |
+`1000000` is the number of simulations; `42` is the random seed. The script exports CSV probabilities for champion, finalist, semifinalist, quarterfinalist, Round of 16, and Round of 32.
 
-Results are exported as **CSV files** with probabilities for:
+## Note
 
-`Champion` · `Finalist` · `Semifinalist` · `Quarterfinalist` · `Round of 16` · `Round of 32`
-
-<br>
-
-## ⚠️ Disclaimer
-
-This project is intended for **research and educational purposes** only.
+This project is for research and education. Predictions are estimates produced by the model, not guarantees of sporting results.
 
 <div align="center">
 
-<sub>Made with ⚽ and 🐍</sub>
+Made with ⚽ and 🐍
 
 </div>
