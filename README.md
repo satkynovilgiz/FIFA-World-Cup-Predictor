@@ -2,7 +2,7 @@
 
 # ⚽ FIFA World Cup Predictor
 
-### Can a model predict the world's biggest football tournament?!
+### Can a model predict the world's biggest football tournament?!!!
 
 Match probabilities, XGBoost, and Monte Carlo simulations — from historical World Cups to a 48-team tournament.
 
